@@ -1,0 +1,56 @@
+[{
+    "id": 1,
+    "name": "Kajal",
+    "age":"23",
+    "height":"160",
+    "profession":"Actress",
+    "location": "Banglore",
+    "image":["K001.jpeg","K002.jpeg","K003.jpeg"],
+    "profile_image":"../../assets/images/K001.jpeg",
+    "about":"I come from a middle-class family. The most important thing in my life is religious beliefs, moral values & respect for elders. I'm an easy-going, sincere,  caring person with a strong work ethic. I'm a modern thinker and follow good values given by our ancestors. I like Painting, love traveling with friends, writing, listening to classical music & watching the latest movies."
+  },
+  {
+    "id": 2,
+    "name": "Gayathri",
+    "age":"28",
+    "height":"142",
+    "profession":"Software",
+    "location": "Chennai",
+    "image":["G001.jpeg","G002.jpeg","G003.jpeg"],
+    "profile_image":"../../assets/images/G001.jpeg",
+    "about":"I belong to a well-mannered middle-class family and strongly believe in Hindu culture, rituals & holds an open-minded personality. I'm a pure vegetarian and never not drank or smoked. I'm Affectionate, kind-hearted, Caring, Happy & belives in Hard Working and creativity. My hobbies are Reading, Dancing, Watch Online Documentaries and Learn New Things."
+  },
+  {
+    "id": 3,
+    "name": "Pallavi",
+    "age":"25",
+    "height":"175",
+    "profession":"Doctor",
+    "location": "Vayanad",
+    "image":["P001.jpeg","P002.jpeg","P003.jpeg"],
+    "profile_image":"../../assets/images/P002.jpeg",
+    "about":"I'd describe myself as someone who's reliable, trendy, smart and someone who always has a smile on the face. I am a big Nature & Animal lover. I have lived in different parts of India and appreciate all cultures & customs. Looking forward to exploring more with someone of my age. I have always enjoyed and loved the company of my parents."
+  },
+  {
+    "id": 4,
+    "name": "Derishna",
+    "age":"22",
+    "height":"156",
+    "profession":"Professor",
+    "location": "Madurai",
+    "image":["D001.jpeg","D002.jpeg","D003.jpeg"],
+    "profile_image":"../../assets/images/D001.jpeg",
+    "about":"I'm an easy-going, god-fearing, caring, polite, understanding, reliable, and kind-hearted human being. I consider within the motto Live and let live. I hate liars. I'm fun-loving, down earth, and really a lot Optimist. I like touring, sightseeing, listening to rock music, studying all the most recent fiction novels."
+  },
+  {
+    "id": 5,
+    "name": "Ellakiya",
+    "age":"20",
+    "height":"169",
+    "profession":"Student",
+    "location": "Pune",
+    "image":["E001.jpeg","E002.jpeg","E003.jpeg"],
+    "profile_image":"../../assets/images/E001.jpeg",
+    "about":"I've at all times been an achiever be it teachers or skilled life or sports activities or every other area in my life. I consider in success by way of onerous work & dedication. I'm a progressive thinker & respect every particular person's area & values."
+  }
+]

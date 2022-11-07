@@ -1,0 +1,53 @@
+
+<!-- <div class="search-container"> 
+    <h3 class="matches-heading">My Matches</h3>
+    <h2 class="matches-count">{{profile_count}} Profiles pending with me</h2>
+    <section class="card-section">
+    <div class="container-fluid">
+      <div class="slider-wrap">
+        <div class="slider-main">
+          <div *ngFor="let user of user_list" class="card">
+            <a routerLink="/view-profile/{{user.id}}">
+              <img src="../../assets/images/{{user.profile_image}}" class="card-img-top" alt="...">
+            </a>
+              <div class="card-body">
+                <h3 class="card-title">{{user.name}}</h3>
+                <p class="card-text mb-0">{{user.age}} years, {{user.height | heightConvertor}}, {{user.profession}}</p>
+                <p class="card-text">{{user.location}}</p>
+                <a routerLink="/view-profile/{{user.id}}" class="btn rounded-pill accept-btn">Yes</a>
+                <button class="btn rounded-pill reject-btn">No</button>
+              </div>
+            </div>
+        </div>
+        <div class="button-area">
+          <button type="button" class="prev" appPrev><fa-icon class="fa-2x" [icon]="left_icon"></fa-icon></button>
+          <button type="button" class="next" appNext><fa-icon class="fa-2x" [icon]="right_icon"></fa-icon></button>
+        </div>
+      </div>
+    </div>
+        
+    </section>
+    </div>  -->
+
+<div class="search-container">
+  <h3 class="matches-heading">My Matches</h3>
+    <h2 class="matches-count">{{profile_count}} Profiles pending with me</h2>
+    <section class="card-section">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template *ngFor="let user of user_list"  carouselSlide> 
+      <div class="card">
+        <a routerLink="/view-profile/{{user.id}}">
+          <img src="../../assets/images/{{user.profile_image}}" class="card-img-top" alt="...">
+        </a>
+          <div class="card-body">
+            <h3 class="card-title">{{user.name}}</h3>
+            <p class="card-text mb-0">{{user.age}} years, {{user.height | heightConvertor}}, {{user.profession}}</p>
+            <p class="card-text">{{user.location}}</p>
+            <a routerLink="/view-profile/{{user.id}}" class="btn rounded-pill accept-btn">Yes</a>
+            <button class="btn rounded-pill reject-btn">No</button>
+          </div>
+        </div>
+      </ng-template> 
+      </owl-carousel-o>
+    </section>
+</div>

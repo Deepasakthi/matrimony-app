@@ -1,0 +1,32 @@
+<div>
+    <h2 class="swipe-screen-heading">Daily recommendations</h2>
+    <div class="align-item">
+    <div *ngIf="alert" id="alert_box" [ngClass]="user_option == 'Not Interested' ? 'alert-danger' : 'alert-success'" class="alert alert-dismissible fade show" role="alert">
+        {{user_option}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    </div>
+    <section class="card-section">
+    <div *ngFor="let user of user_list" id="{{user.id}}" class="card card-width">
+        <img src="../../assets/images/{{user.profile_image}}" class="card-img-top" alt="profileimageNotfound">
+    <div class="card-body">
+        <h3 class="card-title">{{user.name}}</h3>
+        <p class="card-text mb-0">{{user.age}} years, {{user.height | heightConvertor}}, {{user.profession}}</p>
+        <p class="card-text">{{user.location}}</p>
+        <div class="flex-items">
+        <div>
+        <button (click)="action('Shortlisted', user.id)" class="btn pl-0"><fa-icon [icon]="star_icon" class="star-icon"></fa-icon>Shortlist</button>
+        </div>
+        <div>
+        <span><b>Like her?</b></span>
+        <button (click)="action('Not Interested', user.id)" class="btn rounded-pill reject-btn"><fa-icon [icon]="x_icon"></fa-icon></button>
+        <button (click)="action('Interested', user.id)" class="btn rounded-pill accept-btn"><fa-icon [icon]="check_icon"></fa-icon></button>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <p *ngIf=" user_list && user_list.length==0" class="align-styles">Visit tomorrow for more profiles...</p>
+    </div>
+    
+    

@@ -1,0 +1,33 @@
+<div class="profile-wrapper">
+    <div *ngIf="user_details" class="profile-image">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div *ngFor="let user_image of user_details.image ; let i = index" [ngClass]="{'active': i === 1}" class="carousel-item">
+            <img src="../../assets/images/{{user_image}}" class="d-block w-fill" alt="profimageNotfound">
+            <a routerLink="/search-swipe" class="close-btn"><fa-icon class="fa-2x fill-white" [icon]="x_icon"></fa-icon></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <div class="card-body profile-details">
+        <h3 class="card-title">{{user_details.name}}</h3>
+        <p class="card-text mb-0">{{user_details.age}} years, {{user_details.height}}, {{user_details.profession}}</p>
+        <p class="card-text">{{user_details.location}}</p>
+        <h5 class="card-title">About: </h5>
+        <p class="card-text">{{user_details.about}}</p>
+      </div>
+    </div>
+</div>

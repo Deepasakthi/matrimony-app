@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #02a1e3 !important;
+}
+
+.owl-prev , .owl-next{
+    position: absolute;
+    top: 36%;
+    background: black !important;
+    border-radius: 47px !important;
+    transform: translate(-50%,-50%);
+    font-size: 20px !important;
+    padding: 5px 14px !important;
+    opacity: 0.5;
+}
+.owl-prev{
+    left: 0%;
+}
+.owl-next{
+    right: 0%;
+   
+}
+.owl-prev:hover , .owl-next:hover{
+    opacity: 1;
+}
